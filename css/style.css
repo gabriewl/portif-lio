@@ -1,0 +1,616 @@
+* {
+    /* ESTILO GERAL */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*Todo o corpo da página */
+    background-color: #0b1215;
+    height: 100vh;
+}
+
+.interface {
+    /*A NAVBAR em si */
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    /* Botão de contato que futuramente vai ser de DARK/LIGHT MODE*/
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #1136BA;
+    color: rgb(213, 213, 213);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    /* Animação do botão de contato que futuramente vai ser de DARK/LIGHT MODE*/
+    box-shadow: 0px 0px 8px #294ac1;
+    color: #FFF;
+    text-shadow: 0px 0px 2px #FFF;
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+h2.titulo {
+    /* configurações do título */
+    color: #FFF;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    /* muda o estilo do texto dentro do span para azul*/
+    color: #1136BA;
+}
+
+/*--------------------------------------*/
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 10px 4%;
+}
+
+header>.interface {
+    /* A interface apenas dentro do <header> */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    /* botões da NAVBAR*/
+
+    color: #606060;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav.menu-desktop a:hover {
+    /* Animação dos botões da NAVBAR*/
+    color: #FFF;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul {
+    /* Retirar o ponto da lista */
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    /* Separando os tópicos */
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* -------------------------------------------------- */
+/* MENU MOBILE */
+
+.btn-abrir-menu i {
+    color: #1136BA;
+    font-size: 45px;
+}
+
+.menu-mobile {
+    background-color: #0e161a;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.btn-abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #1136BA;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 4%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 10%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #294ac1;
+    box-shadow: 0 0 20px #294ac1;
+    text-shadow: 0px 0px 6px #FFF;
+}
+
+.overlay-menu {
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+/*-----------------------------------------------------*/
+/* ESTILO DO TOPO DO SITE */
+
+
+.minha-imagem {
+    /* dimensões da imagem */
+    width: 500px;
+    margin-top: 10px;
+}
+
+section.topo-do-site {
+    padding: 40px 4%
+}
+
+section.topo-do-site .flex {
+    /* alinha os itens no centro e cria um respiro entre eles */
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.topo-do-site h1 {
+    /* Texto principal no topo do site -> Apresentação com efeito de digitação */
+    color: #FFF;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.interface img {
+    /* deixa o cursor defalt */
+    cursor: default;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    /* Ponto azul no H1*/
+    color: #1136BA;
+    font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p {
+    /* Texto embaixo do h1*/
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    /* configuração da animação (o que ela vai fazer) */
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+
+    /* configuração de tempo da animação */
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 55px;
+}
+
+
+.especialidades .especialidades-box {
+    color: #FFF;
+    padding: 32px;
+    border-radius: 20px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px #ffffff5d;
+}
+
+.especialidades .especialidades-box img {
+    width: 95px;
+    height: auto;
+}
+
+.especialidades .especialidades-box h2 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ----------------------------------------------------- */
+/* ESTILO DO SOBRE */
+
+section.sobre {
+    padding: 80px 4%;
+    background-color: #131f24;
+}
+
+section.sobre .flex {
+    /* Deixar o texto alinhado no centro e com um respiro */
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    /* deixa os textos dentro de sobre brancos */
+    color: #fff;
+}
+
+.sobre .img-sobre img {
+    /* configuração da imagem */
+    border-radius: 15px;
+    width: 550px;
+    height: 700px;
+    border: solid double #1136BA;
+}
+
+.sobre .txt-sobre h2 {
+    /* configurações do "prazer sou Gabriel Ferreira" */
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+}
+
+.sobre .txt-sobre h2 span {
+    /* Deixa o span uma linha abaixo */
+    color: #1136BA;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    /* está mexendo nos parágrafos */
+    margin: 34px 0;
+    text-align: justify;
+    /* deixa o fim do texto na linha centralizado com o da linha de baixo */
+}
+
+.sobre .txt-sobre .btn-social button {
+    /* estilização do botão de contato */
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1136BA;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.btn-social button:hover {
+    /* animação dos botões de contato */
+    box-shadow: 0px 0px 8px #294ac1;
+    text-shadow: 0px 0px 2px #FFF;
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+/* ----------------------------------------------------- */
+/* ESTILO DOS PROJETOS */
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-import {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-import:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.785);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .8s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ----------------------------------------------------- */
+/* ESTILO DO FORMULÁRIO */
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    /* Eu não quero que o formulário ultrapasse estes limites independente do tamanho de tela */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* os elementos vão ficar em coluna (um embaixo do outro) */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #212121;
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*
+form input::placeholder { 
+    color: #183ec8;
+}
+*/
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar {
+    margin-top: 23px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: #1136BA;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .btn-enviar input[type=submit]:hover {
+    /* Animação do botão de contato que futuramente vai ser de DARK/LIGHT MODE*/
+    box-shadow: 0px 0px 8px #294ac1;
+    color: #FFF;
+    text-shadow: 0px 0px 2px #FFF;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/*--------------------------------------*/
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #1136BA;
+}
+
+footer .btn-social button {
+    /* estilização do botão de contato */
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1136BA;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+footer .line-footer p i {
+    color: #1136BA;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1244px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* CABEÇALHO */
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* TOPO DO SITE */
+
+    section .topo-do-site .flex {
+        gap: 900px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* ESPECIALIDADES */
+    section .especialidades {
+        padding: 40px 8%;
+        gap: 10px
+    }
+
+    section.especialidades .flex {
+        gap: 0px;
+    }
+
+    .especialidades .especialidades-box img {
+        width: 110px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .especialidades .especialidades-box h2 {
+        text-align: center;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* SOBRE */
+
+    section.sobre {
+        padding: 20px 8%;
+    }
+
+    .sobre .img-sobre img {
+        margin-top: -21px;
+        border-radius: 30px;
+    }
+
+    .btn-social {
+        text-align: center;
+        margin-bottom: 20 px;
+    }
+
+    /* -------------------------------------------------- */
+    /* SOBRE */
+
+    section.portifolio {
+        padding: 80px 8%;
+        ;
+    }
+
+    .img-import {
+        width: 100%;
+    }
+
+    section.portifolio .flex {
+        gap: 40px;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* RODAPÉ*/
+
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+}
