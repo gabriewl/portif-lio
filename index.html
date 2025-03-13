@@ -27,28 +27,38 @@
 </head>
 
 <body>
+  <!-- Lembretes:
+    1) todo link no site usar targuet_blank (pesquisar)
+    2) faça o site igual e depois tente mudar do jeito que você quer se inspirando no arquivo do paint (tem que criar e planejar ainda)
+    3) algumas coisas vou tentar mudar (organizar videos na playlist do youtube pra ir mudando o site do jeito que eu quero)
+    4) deixar a nav bar estática
+    5) botão de dark mode
+    6) botão para mandar mensagem no whats app
+    7) botão para subir no topo do site 
+    8) fazer borda animada na nav bar
+  -->
 
   <!------------------------ Início do CABEÇALHO ------------------------------------------->
   <header>
     <div class="interface">
       <div class="logo">
-        <a href="#">
-          <img src="images/logo.png" alt="Logo" class="minha-logo">
+        <img src="images/logo.png" alt="Logo" class="minha-logo">
         </a>
       </div> <!-- logo -->
 
-      <nav class="menu-desktop"> 
+      <nav class="menu-desktop">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Especialidades</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#topo-do-site">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portifolio">Projetos</a></li>
         </ul>
       </nav>
 
       <div class="btn-contato"> <!-- Botão de contato -> DARK MODE/ LIGHT MODE-->
-        <a href="#"></a> <!-- Link para o contato -> Botão para Dark Mode -->
-        <button>CONTATO</button>
+        <a href="https://api.whatsapp.com/send?phone=5532987060061" target="_blank">
+          <button>CONTATO</button> <!-- Link para o contato -> Botão para Dark Mode -->
+        </a>
       </div> <!-- btn-contato -->
 
       <div class="btn-abrir-menu" id="btn-menu">
@@ -62,11 +72,11 @@
 
         <nav>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Especialidades</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#topo-do-site">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portifolio">Projetos</a></li>
+            <li><a href="#https://api.whatsapp.com/send?phone=5532987060061" target="_blank">Contato</a></li>
           </ul>
         </nav>
 
@@ -91,11 +101,10 @@
               intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.</p>
 
             <div class="btn-contato">
-              <a href="#">
+              <a href="https://api.whatsapp.com/send?phone=5532987060061" target="_blank">
                 <button>Entre em contato</button>
-
               </a>
-            </div>
+            </div> <!-- btn-contato -->
           </div> <!-- txt-topo-site -->
 
           <div class="img-topo-site">
@@ -109,7 +118,7 @@
 
 
     <!--------------------------- Início do ESPECIALIDADES --------------------------------->
-    <section class="especialidades">
+    <section class="especialidades" id="especialidades">
       <div class="interface">
         <h2 class="titulo">MEUS <span>CONHECIMENTOS.</span></h2>
         <div class="flex">
@@ -147,7 +156,7 @@
 
 
     <!--------------------------- Início do SOBRE ------------------------------------------>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <div class="interface">
         <div class="flex">
           <div class="img-sobre">
@@ -156,17 +165,16 @@
 
           <div class="txt-sobre">
             <h2>MUITO PRAZER, <span>SOU GABRIEL FERREIRA.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur rerum dignissimos itaque,
-              mollitia nobis non minus modi, est incidunt harum repudiandae odio tempore exercitationem quisquam?
-              Exercitationem labore tempora sequi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur, pariatur exercitationem
-              non hic, dolorem facilis alias eum rerum dignissimos veniam soluta quasi vel. Incidunt, dolorem quia!
-              Assumenda, perferendis temporibus?</p>
+            <p>Olá, sejam muito bem-vindo(a)s ao meu portifólio! Estudava Marketing Digital e ao longo dos meus estudos conheci a programação e me encantei. Sempre gostei dessa parte de tecnologia e aliado a minha curiosidade entrei neste mundo da Programação.</p>
+            <p>Atualmente faço Análise e Desenvolvimento de Sistemas no IF Sudeste Juiz de Fora, e o Curso na Udemy JavaScript e TypeScript do básico ao avançado do Luiz Otávio Miranda. A cada dia que passa aprendo mais e sempre estou me atualizando nas diversas áreas da programação, fazendo cursos complementares, mentorias etc. Hoje sou um Desenvolvedor Front-End mas estou estudando e me aprimorando para me tornar um Desenvolvedor Full-Stack.</p>
 
             <div class="btn-social">
-              <a href="#"><button><i class="bi bi-instagram" style="font-size: 32px; color: #fff;"></i></button></a>
-              <a href="#"><button><i class="bi bi-linkedin" style="font-size: 32px; color: #fff;"></i></button></a>
-              <a href="#"><button><i class="bi bi-whatsapp" style="font-size: 32px; color: #fff;"></i></button></a>
+              <a href="https://www.instagram.com/gabriewl.f7/" target="_blank"><button><i class="bi bi-instagram"
+                    style="font-size: 32px; color: #fff;"></i></button></a>
+              <a href="https://www.linkedin.com/in/jo%C3%A3ogabrielferreiraleite/" target="_blank"><button><i
+                    class="bi bi-linkedin" style="font-size: 32px; color: #fff;"></i></button></a>
+              <a href="https://api.whatsapp.com/send?phone=5532987060061" target="_blank"><button><i
+                    class="bi bi-whatsapp" style="font-size: 32px; color: #fff;"></i></button></a>
             </div> <!-- fim do btn-social -->
           </div> <!-- fim da txt-sobre -->
         </div> <!-- fim da flex -->
@@ -177,20 +185,21 @@
 
 
     <!--------------------------- Início dos PROJETOS -------------------------------------->
-    <section class="portifolio">
+    <section class="portifolio" id="portifolio">
       <div class="interface">
         <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
         <div class="flex">
-          <div class="img-import" style="background-image: url(images/stripe.png);">
-            <div class="overlay">To-do List</div>
-          </div>
-
+          <a href="https://gftodo-list.000webhostapp.com" target="_blank">
+            <div class="img-import" style="background-image: url(images/to-do-list.jpg);">
+              <div class="overlay">To Do List</div>
+            </div>
+          </a>
           <div class="img-import" style="background-image: url(images/atomicat.png);">
-            <div class="overlay">Exemplo de Projeto (Futuros Projetos vem ai :) ) </div>
+            <div class="overlay">Exemplo de Site <br>(Projetos em andamento...)</div>
           </div>
 
           <div class="img-import" style="background-image: url(images/goldage.png);">
-            <div class="overlay">Exemplo de Projeto (Futuros Projetos vem ai :) ) </div>
+            <div class="overlay">Exemplo de Site <br>(Projetos em andamento...)</div>
           </div>
 
         </div> <!-- fim de flex -->
@@ -200,9 +209,9 @@
 
 
     <!--------------------------- Início do FORMULÁRIO ------------------------------------->
-    <section class="formulario">
+    <section class="formulario" id="formulario">
       <div class="interface">
-        <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+        <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
         <form method="post" action="assets/formulario.php">
           <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
@@ -219,23 +228,26 @@
 
   <!--------------------------- Início do RODAPÉ ------------------------------------->
   <footer>
-    <div class="interface">
+    <div class="interface" id="interface">
       <div class="line-footer">
         <div class="flex">
           <div class="logo-footer">
             <img src="images/logo.png" alt="Minha Logo">
           </div> <!-- logo-footer -->
           <div class="btn-social">
-            <a href="#"><button><i class="bi bi-instagram" style="font-size: 32px; color: #fff;"></i></button></a>
-            <a href="#"><button><i class="bi bi-linkedin" style="font-size: 32px; color: #fff;"></i></button></a>
-            <a href="#"><button><i class="bi bi-whatsapp" style="font-size: 32px; color: #fff;"></i></button></a>
+            <a href="https://www.instagram.com/gabriewl.f7/" target="_blank"><button><i class="bi bi-instagram"
+                  style="font-size: 32px; color: #fff;"></i></button></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3ogabrielferreiraleite/" target="_blank"><button><i
+                  class="bi bi-linkedin" style="font-size: 32px; color: #fff;"></i></button></a>
+            <a href="https://api.whatsapp.com/send?phone=5532987060061" target="_blank"><button><i
+                  class="bi bi-whatsapp" style="font-size: 32px; color: #fff;"></i></button></a>
           </div> <!-- btn-social -->
         </div> <!-- flex -->
       </div> <!-- line-footer -->
 
       <div class="line-footer borda">
         <p><i class="bi bi-envelope-fill"></i>
-          <a href="mailto:gabriel.ferreiraf7@outlook.com">gabriel.ferreiraf7@outlook.com</a>
+          <a>gabriel.ferreiraf7@outlook.com</a>
         </p>
       </div> <!-- line-footer -->
     </div> <!-- interface -->
